@@ -1,0 +1,5 @@
+*.pyc
+config.sh
+bot.py
+bot.log
+bot1.py

@@ -12,7 +12,7 @@ logging.basicConfig(format='%(name)s - %(levelname)s - %(message)s',
                     filename='bot.log')
 
 def main():
-    mybot = Updater("", request_kwargs=PROXY)
+    mybot = Updater(os.getenv('API_KEY'), request_kwargs=PROXY)
     dp = mybot.dispatcher
     dp.add_handler(CommandHandler("start", greet_user))
     dp.add_handler(MessageHandler(Filters.text, talk_to_me))

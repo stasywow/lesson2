@@ -1,5 +1,9 @@
+
 def ask_user():
     q = input('Как дела?')
-    while q!='Хорошо':
+    while q != 'Хорошо':
         q = input('Как дела?')
-ask_user()
+
+
+if __name__ == '__main__':
+    ask_user()

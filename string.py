@@ -1,4 +1,6 @@
-def comparison(first,second):
+
+
+def main(first, second):
     if type(first) != str and type(second) != str:
         return '0'
     elif first == second:
@@ -7,7 +9,9 @@ def comparison(first,second):
         return '2'
     elif first != second and second == 'learn':
         return '3'
-first = input()
-second = input()
-print(comparison(first,second))
 
+
+if __name__ == '__main__':
+    first = input("Enter first string")
+    second = input("Enter second string")
+    print(main(first, second))
